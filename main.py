@@ -61,16 +61,16 @@ def atm_menu(account):
         if choice == '1':
             check_balance(account)
         # Option 2 allows the user to withdraw money from their bank account
-        if choice == '2':
+        elif choice == '2':
             withdraw_money(account)
         # Option 3 lets the user deposit money into their account
-        if choice == '3':
+        elif choice == '3':
             deposit_money(account)
         # Option 4 lets the user check their recent transactions
-        if choice == '4':
+        elif choice == '4':
             check_transaction_history(account)
         # Option 5 allows the user to exit their bank account
-        if choice == '5':
+        elif choice == '5':
             print("\nThank you for using KRAL ATM.")
             break
         # The program accepts only numbers between 1 and 5.
